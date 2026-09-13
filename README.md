@@ -578,6 +578,8 @@ print(f"filter2D vs manual (cropped): max = {diff_man_cropped.max()}, mean = {di
 
 Comparing the three methods, filter2D and separable version were identical (because filter2D function was used with the 1D dimensions themselves). While there were differences between filter2D and the manual convolution method, cropping the image border caused this difference to disappear, since the error rose from the different edge padding methods used, making all three methods result in identical outputs.
 
+However, since computing multiplications with 1D matrices is much less complex than 2D matrices, the separable method would be more efficient to use. Because it gives near-identical performance with less computational complexity, many implementations use the 1D approach instead of direct 2D convolution.
+
 # Question 8
 
 
