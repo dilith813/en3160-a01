@@ -4,12 +4,15 @@ with open("Report.html", "r", encoding="utf-8") as f:
 custom_css = """
 <style>
   pre, code, .CodeMirror, .highlight, .output_text pre, .jp-CodeMirrorEditor {
-    font-size: 9px !important;
-    line-height: 1.15 !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
   }
   .jp-RenderedImage img, img {
-    max-width: 55% !important;
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
 </style>
 """
